@@ -7,16 +7,14 @@ tweetBtn.addEventListener('click', function () {
 })
 
 document.addEventListener('click', function(e){
-    if (e.target.dataset.reply){
-        console.log(e.target.dataset.reply)
+    if (e.target.dataset.like) {
+        handleLikeClick(e.target.dataset.like)
     }
-    if (e.target.dataset.like){
-        console.log(e.target.dataset.like)
-    }
-    if (e.target.dataset.retweet){
-        console.log(e.target.dataset.retweet)
-    }
-    
+})
+
+function handleLikeClick(tweetId){
+    console.log(tweetId)
+}
 
 function getFeedHtml() {
     let feedHtml = ``
