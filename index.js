@@ -15,8 +15,7 @@ document.addEventListener('click', function(e){
 function handleLikeClick(tweetId){
     const targetTweetObj = tweetsData.find(tweet => tweet.uuid === tweetId)
         targetTweetObj.likes++
-
-    console.log(targetTweetObj)
+    renderFeed()
 }
 
 function getFeedHtml() {
