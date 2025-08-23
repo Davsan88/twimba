@@ -19,13 +19,13 @@ document.addEventListener('click', function(e){
 function handleLikeClick(tweetId){
     const targetTweetObj = tweetsData.find(tweet => tweet.uuid === tweetId)
     
-       if (!targetTweetObj.isLiked) {
-        targetTweetObj.likes++
-        targetTweetObj.isLiked = true
-    } else {
-        targetTweetObj.likes--
-        targetTweetObj.isLiked = false
-    }
+    targetTweetObj.isLiked ? targetTweetObj.likes-- : targetTweetObj.likes++
+    
+    targetTweetObj.isLiked = !targetTweetObj.isLiked
+
+    renderFeed()
+}
+
 function handleRetweetClick(tweetId) {
     const targetTweetObj = tweetsData.find(tweet => tweet.uuid === tweetId)
 
