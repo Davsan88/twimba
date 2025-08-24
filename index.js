@@ -6,7 +6,7 @@ tweetBtn.addEventListener('click', function () {
     console.log(tweetInput.value)
 })
 
-document.addEventListener('click', function(e){
+document.addEventListener('click', function (e) {
     if (e.target.dataset.like) {
         handleLikeClick(e.target.dataset.like)
     }
@@ -16,11 +16,11 @@ document.addEventListener('click', function(e){
     }
 })
 
-function handleLikeClick(tweetId){
+function handleLikeClick(tweetId) {
     const targetTweetObj = tweetsData.find(tweet => tweet.uuid === tweetId)
-    
+
     targetTweetObj.isLiked ? targetTweetObj.likes-- : targetTweetObj.likes++
-    
+
     targetTweetObj.isLiked = !targetTweetObj.isLiked
 
     renderFeed()
@@ -31,7 +31,7 @@ function handleRetweetClick(tweetId) {
 
     targetTweetObj.isRetweeted ? targetTweetObj.retweets-- : targetTweetObj.retweets++
 
-    targetTweetObj.isRetweeted = !targetTweetObj.isRetweeted 
+    targetTweetObj.isRetweeted = !targetTweetObj.isRetweeted
 
     renderFeed()
 }
@@ -41,17 +41,18 @@ function getFeedHtml() {
     tweetsData.forEach((tweet) => {
 
         let likeIconClass = tweet.isLiked ? 'liked' : ''
+        let retweetIconClass = tweet.isRetweeted ? 'retweeted' : ''
+
+        if(tweet.replies.length > 0){
+            console.log(tweet.uuid)
+        }
 
         // if (tweet.isLiked) {
         //     likeIconClass = 'liked'
         // }
-
-        let retweetIconClass = tweet.isRetweeted ? 'retweeted' : ''
-
         // if(tweet.isRetweeted) {
         //     retweetIconClass = 'retweeted'
         // }
-    
 
         feedHtml += `
         <div class="tweet">
