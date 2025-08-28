@@ -1,3 +1,7 @@
+import { v4 as uuidv4 } from 'https://jspm.dev/uuid@7.0.2'
+uuidv4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
+
+
 export const tweetsData = [   
     {
         handle: `@TrollBot66756542 💎`,
@@ -9,7 +13,7 @@ export const tweetsData = [
         replies: [],
         isLiked: false,
         isRetweeted: false,
-        uuid: '4b161eee-c0f5-4545-9c4b-8562944223ee',
+        uuid: uuidv4(),
     },    
     {
         handle: `@Elon ✅`,
@@ -31,7 +35,7 @@ export const tweetsData = [
         ],
         isLiked: false,
         isRetweeted: false,
-        uuid: '3c23454ee-c0f5-9g9g-9c4b-77835tgs2',
+        uuid: uuidv4(),
     },
         {
         handle: `@NoobCoder12`,
@@ -53,6 +57,6 @@ export const tweetsData = [
         ],
         isLiked: false,
         isRetweeted: false,
-        uuid: '8hy671sff-c0f5-4545-9c4b-1237gyys45',
+        uuid: uuidv4(),
     },     
 ]
