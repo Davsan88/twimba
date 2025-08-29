@@ -58,8 +58,6 @@ function handleTweetBtnClick() {
         renderFeed()
         tweetInput.value = ''
     }
-
-    renderFeed()
 }
 
 function getFeedHtml() {
