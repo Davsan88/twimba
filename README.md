@@ -27,3 +27,24 @@ Originally a DOM challenge, I pushed it into a fully functional mini-app: tweets
 
 ---
 
+## 📚 Features Covered
+
+- Data-driven UI with a single source of truth (`tweetsData`)
+- Template rendering using string interpolation
+- Event delegation (`document.addEventListener('click', ...)`)
+- Array utilities: `find`, `forEach`, `unshift`
+- UI toggles via data flags (`isLiked`, `isRetweeted`) + class switching
+- Conditional section rendering (replies)
+
+---
+
+## 💡 Skills Practiced
+
+- Separating data from UI rendering
+- Writing pure-ish render functions
+- Thinking in state → render flow (framework-friendly mindset)
+- Debugging DOM updates and event targets
+- Working with ES modules and CDN ESM imports
+
+---
+
