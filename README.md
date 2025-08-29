@@ -48,3 +48,23 @@ Originally a DOM challenge, I pushed it into a fully functional mini-app: tweets
 
 ---
 
+## 🧪 How to Use
+
+1. Open the app in your browser
+2. Click the heart to like and retweet icon to retweet
+3. Click the comment icon to show/hide replies
+4. Type in the input and hit Tweet to post a new tweet
+
+---
+
+## 🏗️ Possible Next Steps
+
+- ⏱ Add timestamps & relative time (“2m ago”)
+- 💬 Add a reply input per tweet
+- 💾 Persist tweetsData in localStorage
+- 🧼 Sanitize user input to prevent HTML injection
+- 🔍 Add filtering (liked only / retweeted only)
+- 🧩 Explore createElement/append rendering for finer control
+
+---
+
