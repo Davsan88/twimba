@@ -68,3 +68,19 @@ Originally a DOM challenge, I pushed it into a fully functional mini-app: tweets
 
 ---
 
+## ✅ Why I’m Proud
+
+I leaned into a data-first rendering approach that mirrors how modern frameworks think, while keeping everything in vanilla JS. It’s small, but it reflects real patterns I’ll reuse in React and beyond.
+
+---
+
+## 🌐 Live Demo
+
+👉 [Live Demo](https://twimbadavsan.netlify.app/)
+
+---
+
+## 📫 Contact
+
+Got feedback or questions?
+📩  **david.sanchez.martinez@outlook.com**
