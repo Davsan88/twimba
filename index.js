@@ -61,6 +61,7 @@ function handleTweetBtnClick() {
             isRetweeted: false,
             uuid: uuidv4()
         })
+        console.log("Just added:", JSON.stringify(tweetsData[0].tweetText))
         renderFeed()
         tweetInput.value = ''
     }
