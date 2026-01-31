@@ -43,6 +43,12 @@ function handleReplyClick(replyId) {
 function handleTweetBtnClick() {
     const tweetInput = document.getElementById('tweet-input')
 
+    console.log(
+        JSON.stringify(tweetInput.value),
+        "length:", tweetInput.value.length,
+        "trimmed length:", tweetInput.value.trim().length
+    )
+
     if (tweetInput.value.trim()) {
         tweetsData.unshift({
             handle: `@Scrimba`,
