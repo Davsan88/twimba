@@ -43,7 +43,7 @@ function handleReplyClick(replyId) {
 function handleTweetBtnClick() {
     const tweetInput = document.getElementById('tweet-input')
 
-    if (tweetInput.value) {
+    if (tweetInput.value.trim()) {
         tweetsData.unshift({
             handle: `@Scrimba`,
             profilePic: `images/scrimbalogo.png`,
